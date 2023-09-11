@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Menu.scss';
 import logo from '../../assets/images/logo.png';
 import avatar from '../../assets/images/avatar-1295394_960_720.webp';
+import App from '../../App';
 
 function Menu() {
   const [isMenuActive, setIsMenuActive] = useState(false);
@@ -22,19 +23,17 @@ function Menu() {
         </div>
         <div className={`dropdown-content ${isMenuActive ? 'active' : ''}`}>
           <ul>
-            <li><a href="./components/flex/flex">Flexbox</a></li>
-            <li><a href="./components/contacts/contacts">Contact</a></li>
-            <li><a href="./components/products/products">Products</a></li>
+            <li><a href="#seccion1">Flexbox</a></li>
+            <li><a href="#seccion2">Contact</a></li>
+            <li><a href="#seccion3">Products</a></li>
+            <li><a href="#seccion4">Seccion 4</a></li>
+            <li><a href="#seccion5">Seccion 5</a></li>
           </ul>
         </div>
         <div className="avatar-container">
           <img src={avatar} className="avatar" alt="Foto de perfil" />
         </div>
       </div>
-      <div className="content">
-        <h1>Prueba</h1>
-      </div>
-      <div className="footer"></div>
     </div>
   );
 }

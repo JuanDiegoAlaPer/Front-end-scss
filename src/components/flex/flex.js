@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const flex = () => {
+export const Flex = () => {
   return (
     <div>flex</div>
   )
