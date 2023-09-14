@@ -20,27 +20,27 @@
       }
       & .front {
         transform: translateZ(50px);
-        background: linear-gradient(45deg, #ff0000, #bdd846);
+        background: linear-gradient(45deg, #55AEF1, #4661d8, #062D4B, #020B13);
       }
       & .back {
         transform: translateZ(-50px);
-        background: linear-gradient(45deg, #031f33, #46d8d1);
+        background: linear-gradient(45deg, #55AEF1, #4661d8, #062D4B, #020B13);
       }
       & .top {
         transform: rotateX(90deg) translateZ(50px);
-        background: linear-gradient(45deg, #ff00aa, #4657d8);
+        background: linear-gradient(45deg, #55AEF1, #4661d8, #062D4B, #020B13);
       }
       & .bottom {
         transform: rotateX(90deg) translateZ(-50px);
-        background: linear-gradient(45deg, #ff0062, #d87446);
+        background: linear-gradient(45deg, #55AEF1, #4661d8, #062D4B, #020B13);
       }
       & .left {
         transform: rotateY(90deg) translateZ(50px);
-        background: linear-gradient(45deg, #2f00ff, #fffb2c);
+        background: linear-gradient(45deg, #55AEF1, #4661d8, #062D4B, #020B13);
       }
       & .right {
         transform: rotateY(90deg) translateZ(-50px);
-        background: linear-gradient(45deg, #55ff00, #4661d8);
+        background: linear-gradient(45deg, #55AEF1, #4661d8, #062D4B, #020B13);
       }
     }
   }
@@ -69,7 +69,7 @@
       }
       & .front {
         transform: translateZ(50px);
-        background: linear-gradient(45deg, #031f33, #46d8d1);
+        background: linear-gradient(45deg, #1DA1F2, #1877F2, #1253E2, #062D4B);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -81,25 +81,25 @@
       }
       & .back {
         transform: translateZ(-50px);
-        background: linear-gradient(45deg, #031f33, #46d8d1);
+        background: linear-gradient(45deg, #1DA1F2, #1877F2, #1253E2, #062D4B);
       }
       & .top {
         transform: rotateX(90deg) translateZ(50px);
-        background: linear-gradient(45deg, #031f33, #46d8d1);
+        background: linear-gradient(45deg, #1DA1F2, #1877F2, #1253E2, #062D4B);
       }
       & .bottom {
         transform: rotateX(90deg) translateZ(-50px);
-        background: linear-gradient(45deg, #031f33, #46d8d1);
+        background: linear-gradient(45deg, #1DA1F2, #1877F2, #1253E2, #062D4B);
         
       }
       & .left {
         transform: rotateY(90deg) translateZ(50px);
-        background: linear-gradient(45deg, #031f33, #46d8d1);
+        background: linear-gradient(45deg, #1DA1F2, #1877F2, #1253E2, #062D4B);
 
       }
       & .right {
         transform: rotateY(90deg) translateZ(-50px);
-        background: linear-gradient(45deg, #031f33, #46d8d1);
+        background: linear-gradient(45deg, #1DA1F2, #1877F2, #1253E2, #062D4B);
         
       }
     }
@@ -121,7 +121,7 @@
       }
       & .front {
         transform: translateZ(50px);
-        background: linear-gradient(45deg, #ff0062, #d39cbe);
+        background: linear-gradient(45deg, #FFD700, #FF1493, #8A2BE2, #FF4500);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -133,25 +133,27 @@
       }
       & .back {
         transform: translateZ(-50px);
-        background: linear-gradient(45deg, #a01a4e, #d39cbe);
+        background: linear-gradient(45deg, #FFD700, #FF1493, #8A2BE2, #FF4500);
       }
       & .top {
         transform: rotateX(90deg) translateZ(50px);
-        background: linear-gradient(45deg, #ff0062, #d39cbe);
+        background: linear-gradient(45deg, #FFD700, #FF1493, #8A2BE2, #FF4500);
       }
       & .bottom {
         transform: rotateX(90deg) translateZ(-50px);
-        background: linear-gradient(45deg, #ff0062, #d39cbe);
+        background: linear-gradient(45deg, #FFD700, #FF1493, #8A2BE2, #FF4500);
+
         
       }
       & .left {
         transform: rotateY(90deg) translateZ(50px);
-        background: linear-gradient(45deg, #ff0062, #d39cbe);
+        background: linear-gradient(45deg, #FFD700, #FF1493, #8A2BE2, #FF4500);
 
       }
       & .right {
         transform: rotateY(90deg) translateZ(-50px);
-        background: linear-gradient(45deg, #ff0062, #d39cbe);
+        background: linear-gradient(45deg, #FFD700, #FF1493, #8A2BE2, #FF4500);
+
         
       }
     }
@@ -173,7 +175,7 @@
       }
       & .front {
         transform: translateZ(50px);
-        background: linear-gradient(45deg, #2f00ff, #fffb2c);
+        background: linear-gradient(45deg, #0077B5, #0D84C1, #127DBE, #147BBE, #1A6DAB, #00335B);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -185,25 +187,25 @@
       }
       & .back {
         transform: translateZ(-50px);
-        background: linear-gradient(45deg, #2f00ff, #fffb2c);
+        background: linear-gradient(45deg, #0077B5, #0D84C1, #127DBE, #147BBE, #1A6DAB, #00335B);
       }
       & .top {
         transform: rotateX(90deg) translateZ(50px);
-        background: linear-gradient(45deg, #2f00ff, #fffb2c);
+        background: linear-gradient(45deg, #0077B5, #0D84C1, #127DBE, #147BBE, #1A6DAB, #00335B);
       }
       & .bottom {
         transform: rotateX(90deg) translateZ(-50px);
-        background: linear-gradient(45deg, #2f00ff, #fffb2c);
+        background: linear-gradient(45deg, #0077B5, #0D84C1, #127DBE, #147BBE, #1A6DAB, #00335B);
         
       }
       & .left {
         transform: rotateY(90deg) translateZ(50px);
-        background: linear-gradient(45deg, #2f00ff, #fffb2c);
+        background: linear-gradient(45deg, #0077B5, #0D84C1, #127DBE, #147BBE, #1A6DAB, #00335B);
 
       }
       & .right {
         transform: rotateY(90deg) translateZ(-50px);
-        background: linear-gradient(45deg, #2f00ff, #fffb2c);
+        background: linear-gradient(45deg, #0077B5, #0D84C1, #127DBE, #147BBE, #1A6DAB, #00335B);
         
       }
     }

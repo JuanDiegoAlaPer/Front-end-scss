@@ -6,11 +6,47 @@ import Flex from "./components/flex/Flex";
 import Contact from "./components/contacts/contacts";
 import Products from "./components/products/products";
 
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 function App() {
+  const sliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+  };
+
   const [showFloatingMenu, setShowFloatingMenu] = useState(false);
+
+  const [currentSection, setCurrentSection] = useState("");
 
   useEffect(() => {
     const handleScroll = () => {
+      const section1 = document.getElementById("seccion1");
+      const section2 = document.getElementById("seccion2");
+      const section3 = document.getElementById("seccion3");
+      const section4 = document.getElementById("seccion4");
+      const section5 = document.getElementById("seccion5");
+
+      const scrollY = window.scrollY;
+
+      if (scrollY < section2.offsetTop - 100) {
+        setCurrentSection("seccion1");
+      } else if (scrollY < section3.offsetTop - 100) {
+        setCurrentSection("seccion2");
+      } else if (scrollY < section4.offsetTop - 100) {
+        setCurrentSection("seccion3");
+      } else if (scrollY < section5.offsetTop - 100) {
+        setCurrentSection("seccion4");
+      } else {
+        setCurrentSection("seccion5");
+      }
+
       if (window.scrollY > 100) {
         setShowFloatingMenu(true);
       } else {
@@ -21,9 +57,9 @@ function App() {
     window.addEventListener("scroll", handleScroll);
 
     const handleMenuItemClick = (e) => {
-      e.preventDefault(); 
-      const targetId = e.target.getAttribute("href").substring(1); 
-      const targetSection = document.getElementById(targetId); 
+      e.preventDefault();
+      const targetId = e.target.getAttribute("href").substring(1);
+      const targetSection = document.getElementById(targetId);
       if (targetSection) {
         window.scrollTo({
           top: targetSection.offsetTop,
@@ -49,6 +85,18 @@ function App() {
       <div className="content">
         <div className="seccion1" id="seccion1">
           <h1>Flexbox</h1>
+          <Slider {...sliderSettings}>
+            <div className="slider_container">
+              <img src="http://placekitten.com/g/400/200" alt="Imagen 1" />
+            </div>
+            <div className="slider_container">
+              <img src="http://placekitten.com/g/400/200" alt="Imagen 2" />
+            </div>
+            <div className="slider_container">
+              <img src="http://placekitten.com/g/400/200" alt="Imagen 3" />
+            </div>
+            {/* Agrega más imágenes según sea necesario */}
+          </Slider>
         </div>
         <div className="seccion2" id="seccion2">
           <h1>Contact</h1>
@@ -65,8 +113,8 @@ function App() {
       </div>
 
       <div className={`floating-menu ${showFloatingMenu ? "show" : ""}`}>
-        <div className="icono-1">
-          <a href="#seccion1">
+        <div className={`icono-1 ${currentSection === "seccion1" ? "active" : ""}`}>
+          <a href="#seccion1" className="icono">
             <svg
               className="svg-icon"
               xmlns="http://www.w3.org/2000/svg"
@@ -77,8 +125,8 @@ function App() {
             </svg>
           </a>
         </div>
-        <div className="icono-2">
-          <a href="#seccion2">
+        <div className={`icono-2 ${currentSection === "seccion2" ? "active" : ""}`}>
+          <a href="#seccion2" className="icono">
             <svg
               className="svg-icon"
               xmlns="http://www.w3.org/2000/svg"
@@ -89,8 +137,8 @@ function App() {
             </svg>
           </a>
         </div>
-        <div className="icono-3">
-          <a href="#seccion3">
+        <div className={`icono-3 ${currentSection === "seccion3" ? "active" : ""}`}>
+          <a href="#seccion3" className="icono">
             <svg
               className="svg-icon"
               xmlns="http://www.w3.org/2000/svg"
@@ -101,8 +149,8 @@ function App() {
             </svg>
           </a>
         </div>
-        <div className="icono-4">
-          <a href="#seccion4">
+        <div className={`icono-4 ${currentSection === "seccion4" ? "active" : ""}`}>
+          <a href="#seccion4" className="icono">
             <svg
               className="svg-icon"
               xmlns="http://www.w3.org/2000/svg"
@@ -113,8 +161,8 @@ function App() {
             </svg>
           </a>
         </div>
-        <div className="icono-5">
-          <a href="#seccion5">
+        <div className={`icono-5 ${currentSection === "seccion5" ? "active" : ""}`}>
+          <a href="#seccion5" className="icono">
             <svg
               className="svg-icon"
               xmlns="http://www.w3.org/2000/svg"
